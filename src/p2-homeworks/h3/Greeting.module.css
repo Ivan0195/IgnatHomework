@@ -1,0 +1,12 @@
+.someClass {
+    border: 1px solid #709f5a;
+}
+
+.error {
+    border: 1px solid #f80000;
+    margin-left: 5px;
+}
+.errorText {
+    margin-left: 5px;
+    color: #f80000;
+}
