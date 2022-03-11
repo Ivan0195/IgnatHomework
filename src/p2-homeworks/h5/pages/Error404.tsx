@@ -1,19 +1,14 @@
-import React from "react";
-import './../style.css'
+import React from 'react'
+import s from '../Layout.module.css'
 
 function Error404() {
     return (
-        <div className='wrapper'>
-            <div className="mainbox">
-                <div className="err">4</div>
-                <i className="far fa-question-circle fa-spin"></i>
-                <div className="err2">4</div>
-                <div className="msg">Maybe this page moved? Got deleted? Is hiding out in quarantine? Never existed in
-                    the
-                    first place?<p>Let's go <a href="#">home</a> and try from there.</p></div>
-            </div>
+        <div className={s.error404}>
+            <div>404</div>
+            <div>Page not found!</div>
+            <div>Maybe you did something wrong??</div>
         </div>
-    );
+    )
 }
 
-export default Error404;
+export default Error404

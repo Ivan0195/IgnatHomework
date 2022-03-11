@@ -1,13 +1,17 @@
 import React from "react";
 import HW4 from "../../h4/HW4";
-import './../style.css'
+import HW2 from "../../h2/HW2";
+import HW1 from "../../h1/HW1";
+import HW3 from "../../h3/HW3";
 
 
 function PreJunior() {
     return (
         <div className='size'>
             <div className='title'>Наполнение для PreJunior</div>
-            <HW4/>
+            <HW1/>
+            <HW2/>
+            <HW3/>
         </div>
     );
 }

@@ -1,12 +1,10 @@
 import React from "react";
 import HW4 from "../../h4/HW4";
-import './../style.css'
 
 
 function Junior() {
     return (
-        <div className='size'>
-            <div className='title'>Наполнение для Junior</div>
+        <div>
             <HW4/>
         </div>
     );
