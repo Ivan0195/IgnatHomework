@@ -7,11 +7,11 @@ import HW3 from "../../h3/HW3";
 
 function PreJunior() {
     return (
-        <div className='size'>
-            <div className='title'>Наполнение для PreJunior</div>
+        <div>
             <HW1/>
             <HW2/>
             <HW3/>
+            <HW4/>
         </div>
     );
 }
