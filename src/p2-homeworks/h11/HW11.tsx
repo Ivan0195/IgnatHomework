@@ -17,7 +17,7 @@ function HW11() {
             {/*should work (должно работать)*/}
             <div>
                 <SuperRange onChangeRange={setValueMin}
-                            valueMinHandler={minValueChanger}
+                            minValueChanger={minValueChanger}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
@@ -25,8 +25,8 @@ function HW11() {
             <div>
                 <SuperDoubleRange onChangeRange={setValueMin}
                                   onChangeRange2={setValueMax}
-                                  valueMinHandler={minValueChanger}
-                                  valueMaxHandler={maxValueChanger}
+                                  minValueChanger={minValueChanger}
+                                  maxValueChanger={maxValueChanger}
                                   numberContentMin={numberContentMin}
                                   numberContentMax={numberContentMax}
                     // сделать так чтоб value1 и value2 изменялось

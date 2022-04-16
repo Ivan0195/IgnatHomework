@@ -7,8 +7,8 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 type SuperDoubleRangePropsType = DefaultInputPropsType & {
     onChangeRange?: (value: number) => void
     onChangeRange2?: (value: number) => void
-    valueMinHandler: string | number
-    valueMaxHandler: string | number
+    minValueChanger: string | number
+    maxValueChanger: string | number
     numberContentMin: string | number
     numberContentMax: string | number
 }
@@ -18,7 +18,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeRange, onChangeRange2,
         className,
-        valueMaxHandler, valueMinHandler, numberContentMin, numberContentMax,
+        maxValueChanger, minValueChanger, numberContentMin, numberContentMax,
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
@@ -52,14 +52,14 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
                 min={'0'} max={'100'}
-                value={valueMinHandler}
+                value={minValueChanger}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
             <input
                 type={'range'}
                 onChange={onChangeCallback2}
                 className={finalRangeClassName}
-                value={valueMaxHandler}
+                value={maxValueChanger}
                 min={'0'} max={'100'}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
